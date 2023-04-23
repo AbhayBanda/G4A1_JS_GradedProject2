@@ -3,7 +3,7 @@
  
  # How to run this project
  
- After cloning the repository go to the root directory and execute the below commands:
+ After cloning the repository go to the root directory and execute the below commands:(Make sure Node Js is installed)
  
  `npm install` <br>
  `npm run dev`
