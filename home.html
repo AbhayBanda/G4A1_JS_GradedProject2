@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Resume Parser</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <button id="prev" onclick="prevPage()">Prev</button>
+        <input
+          type="search"
+          placeholder="Search for keywords to filter the resume"
+          id="search"
+        />
+        <button id="next" onclick="nextPage()">Next</button>
+      </div>
+      <div class="error" id="error">
+        <div class="sad-emoji">
+          <img src="/images/sad.png" alt="sad" id="sad-image" />
+        </div>
+        <div class="error-text">
+          Invalid search or No applications for this job
+        </div>
+      </div>
+      <div class="resume-wrapper" id="resume-wrapper">
+        <div class="resume">
+          <div class="resume-header" id="resume-header">
+            <h2>John Doe</h2>
+            <h4>Applied For: Software Engineer</h4>
+          </div>
+          <div class="resume-body">
+            <div class="left-box">
+              <div class="left-inner-box" id="inner-box-1">
+                <div class="left-inner-box-header">
+                  <header>Personal Information</header>
+                </div>
+                <div class="left-inner-box-body">
+                  <ul id="personal-info">
+                    <li>9999999999</li>
+                    <li>john@gmail.com</li>
+                    <li><a href="https://www.google.com">Linkedin</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="left-inner-box" id="inner-box-2">
+                <div class="left-inner-box-header">
+                  <header>Technical Skills</header>
+                </div>
+                <div class="left-inner-box-body">
+                  <ul id="skill-set">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="left-inner-box" id="inner-box-3">
+                <div class="left-inner-box-header">
+                  <header>Hobbies</header>
+                </div>
+                <div class="left-inner-box-body">
+                  <ul id="hobbies">
+                    <li>Wildlife</li>
+                    <li>Dance</li>
+                    <li>Workout</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="resume-content">
+              <div class="resume-section">
+                <header><h2>Work Experience in Previous Company</h2></header>
+                <div id="work-experience">
+                  <p><span class="sub-heading">Company Name:</span> Harman</p>
+                  <p>
+                    <span class="sub-heading">Position: </span> Associate
+                    Engineer
+                  </p>
+                  <p><span class="sub-heading">Start Date:</span> 2013-01-01</p>
+                  <p><span class="sub-heading">End Date:</span> 2014-01-01</p>
+                  <p>
+                    <span class="sub-heading">Summary:</span>
+                    Associate engineer with development, testing verification
+                    and validation experience on Car UI display
+                    systems.Performed phone projection development of user
+                    stories and testing with infotainment system such as Android
+                    auto ,Car playAnalyzed requirements , created test plans,
+                    executed test cases for connectivity epic such as C-connect,
+                    F-connect.Good at analyzing DLT logs and analyzing the code
+                    refactor areas.
+                  </p>
+                </div>
+              </div>
+              <div class="resume-section">
+                <header><h2>Projects</h2></header>
+                <div id="summary">
+                  <p>
+                    <span class="sub-heading">Diabetic Retinopaty:</span>
+                    created a GUI using QT designer which will take image of
+                    retina as input, input image will be processed and compare
+                    with the images present in database and then classified as
+                    one of DR stage or normal.OpenCV and image processing
+                    concepts are used. survey paper on this project is publish
+                    in 2nd international conference on Topical Transcend in
+                    Science, Technology & Management.
+                  </p>
+                </div>
+              </div>
+              <div class="resume-section">
+                <header><h2>Education</h2></header>
+                <div id="education">
+                  <p>
+                    <span class="sub-heading">UG:</span> Sai Vidya Institute of
+                    Technology, B.E Computer Science and Engineering,
+                    2011-01-01, 2013-01-01, 8.7
+                  </p>
+                  <p>
+                    <span class="sub-heading">PU: </span> KV AFS YELAHANKA, 8.7
+                  </p>
+                  <p>
+                    <span class="sub-heading">High School:</span> KV AFS Bhuj,
+                    8.7
+                  </p>
+                </div>
+              </div>
+              <div class="resume-section">
+                <header><h2>Internship</h2></header>
+                <div id="internship">
+                  <p><span class="sub-heading">Company Name:</span> Ibm</p>
+                  <p><span class="sub-heading">Position: </span> intern</p>
+                  <p><span class="sub-heading">Start Date:</span> 2013-01-01</p>
+                  <p><span class="sub-heading">End Date:</span> 2014-01-01</p>
+                  <p>
+                    <span class="sub-heading">Summary:</span> Learned about
+                    Tools used for website testing such as Deep Trawl, NVDA, web
+                    developer extension, OpenVAS,Learned about the importance
+                    and concept of OWASP.Learned React JS and worked for
+                    Frontend development with professional.
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume-section">
+                <header><h2>Achievements</h2></header>
+                <div id="achievement">
+                  <p>
+                    <span class="sub-heading">Summary:</span> Attended 5 days
+                    industry orientation workshop organized by free software
+                    movement
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/f506ff3c30.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/scrape_resume_data.js"></script>
+  </body>
+</html>

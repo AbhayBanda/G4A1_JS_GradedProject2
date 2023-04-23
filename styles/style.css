@@ -1,0 +1,120 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 2em auto;
+  width: 50%;
+}
+.controls input {
+  width: 50%;
+  border: 2px solid black;
+}
+.controls button {
+  font-size: 1em;
+  padding: 0.8em;
+  border: 2px solid black;
+}
+
+.error {
+  margin: auto;
+  width: 50%;
+  height: 50vh;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid black;
+  box-shadow: 10px 10px 15px black;
+  display: none;
+}
+.sad-emoji,
+.error-text {
+  width: 50%;
+  text-align: center;
+}
+.error-text {
+  font-size: large;
+  font-weight: bold;
+}
+
+#sad-image {
+  width: 50%;
+  height: 50%;
+}
+.resume-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.resume {
+  width: 50%;
+  border: 1px solid black;
+}
+
+.resume-header h2,
+h4 {
+  margin: 0.5em;
+}
+
+.resume-header {
+  background-color: skyblue;
+  text-align: center;
+  padding: 20px;
+}
+.resume-body {
+  display: flex;
+}
+.left-box {
+  display: inline-block;
+  background-color: bisque;
+  max-width: inherit;
+  font-size: smaller;
+  width: 25%;
+  margin: 1em;
+  align-self: flex-start;
+}
+.left-inner-box {
+  margin: 0.5em;
+}
+.left-inner-box-header {
+  background-color: grey;
+  text-align: center;
+  padding: 0.5em;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+.left-inner-box-body ul {
+  list-style-type: none;
+  text-align: right;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 12px;
+}
+.left-inner-box-body a {
+  text-decoration: none;
+  color: black;
+}
+.sub-heading {
+  font-weight: bold;
+}
+.resume-section {
+  text-align: justify;
+}
+.resume-section p {
+  margin-left: 1.5em;
+}
+.resume-section h2 {
+  text-align: left;
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+.resume-content {
+  margin: 1em 1em 1em 0em;
+}

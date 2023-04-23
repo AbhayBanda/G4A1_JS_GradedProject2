@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: beige;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  height: 100vh;
+}
+form {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 50%;
+  background-color: yellow;
+  box-shadow: 10px 10px 15px dodgerblue;
+}
+form input {
+  padding: 1em;
+  font-family: "Pathway Extreme", sans-serif;
+}
+form button {
+  align-self: flex-start;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+form input {
+  margin: 2em;
+}
+.button1 {
+  background-color: #4caf50;
+  font-size: 18px;
+  padding: 5px 16px;
+  border: none;
+  font-weight: 500;
+  border: 2px solid black;
+  cursor: pointer;
+  font-family: "Pathway Extreme", sans-serif;
+}
+.button1:hover {
+  background-color: rgb(61, 160, 61);
+}
+.button1:active {
+  background-color: azure;
+}
